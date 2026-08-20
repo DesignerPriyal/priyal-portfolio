@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
-    year: "2024 — 2026",
+    year: "2026 — Present",
     company: "Half Onion",
     role: "UI/UX Designer & Developer",
     description:
