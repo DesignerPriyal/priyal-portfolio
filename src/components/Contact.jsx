@@ -2,6 +2,9 @@ import { motion } from "framer-motion";
 import { ArrowUpRight, Mail, Phone } from "lucide-react";
 
 function Contact() {
+  const email = "priyalshrivastava0@gmail.com";
+  const phone = "8516896150";
+
   return (
     <section className="contact-section" id="contact">
 
@@ -67,11 +70,11 @@ function Contact() {
 
 
         {/* =====================================================
-            CTA
+            MAIN CTA
         ===================================================== */}
 
         <motion.a
-          href="mailto:priyalsrv@gmail.com"
+          href={`mailto:${email}`}
           className="contact-cta"
 
           initial={{
@@ -120,10 +123,12 @@ function Contact() {
 
         <div className="contact-details">
 
-          {/* EMAIL */}
+          {/* =================================================
+              EMAIL
+          ================================================= */}
 
           <motion.a
-            href="mailto:priyalsrv@gmail.com"
+            href={`mailto:${email}`}
             className="contact-detail"
 
             initial={{
@@ -157,7 +162,7 @@ function Contact() {
               </span>
 
               <span className="contact-detail-value">
-                priyalsrv@gmail.com
+                {email}
               </span>
             </div>
 
@@ -169,10 +174,12 @@ function Contact() {
           </motion.a>
 
 
-          {/* PHONE */}
+          {/* =================================================
+              PHONE
+          ================================================= */}
 
           <motion.a
-            href="tel:+91 78275-07583"
+            href={`tel:+91${phone}`}
             className="contact-detail"
 
             initial={{
@@ -206,7 +213,7 @@ function Contact() {
               </span>
 
               <span className="contact-detail-value">
-                +91 78275 07583
+                +91 85168 96150
               </span>
             </div>
 
@@ -218,7 +225,9 @@ function Contact() {
           </motion.a>
 
 
-          {/* LINKEDIN */}
+          {/* =================================================
+              LINKEDIN
+          ================================================= */}
 
           <motion.a
             href="https://www.linkedin.com/in/priyalshrivastava/"
