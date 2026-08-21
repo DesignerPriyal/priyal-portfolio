@@ -71,7 +71,7 @@ function Contact() {
         ===================================================== */}
 
         <motion.a
-          href="mailto:priyalshrivastava0@gmail.com"
+          href="mailto:priyalsrv@gmail.com"
           className="contact-cta"
 
           initial={{
@@ -123,7 +123,7 @@ function Contact() {
           {/* EMAIL */}
 
           <motion.a
-            href="mailto:priyalshrivastava0@gmail.com"
+            href="mailto:priyalsrv@gmail.com"
             className="contact-detail"
 
             initial={{
@@ -157,7 +157,7 @@ function Contact() {
               </span>
 
               <span className="contact-detail-value">
-                priyalshrivastava0@gmail.com
+                priyalsrv@gmail.com
               </span>
             </div>
 
