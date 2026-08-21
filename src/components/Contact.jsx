@@ -2,8 +2,13 @@ import { motion } from "framer-motion";
 import { ArrowUpRight, Mail, Phone } from "lucide-react";
 
 function Contact() {
-  const email = "priyalshrivastava0@gmail.com";
-  const phone = "8516896150";
+  const email = "priyalsrv@gmail.com";
+  const phone = "+917827507583";
+
+  const emailSubject = encodeURIComponent("Project Inquiry — Priyal Shrivastava");
+  const emailBody = encodeURIComponent(
+    "Hi Priyal,\n\nI came across your portfolio and would like to discuss a project with you.\n\nThanks!"
+  );
 
   return (
     <section className="contact-section" id="contact">
@@ -70,51 +75,49 @@ function Contact() {
 
 
         {/* =====================================================
-            MAIN CTA
-        ===================================================== */}
+    MAIN CTA
+===================================================== */}
 
-        <motion.a
-          href={`mailto:${email}`}
-          className="contact-cta"
+<motion.a
+  href="mailto:priyalsrv@gmail.com?subject=Project%20Inquiry%20%E2%80%94%20Priyal%20Shrivastava"
+  className="contact-cta"
 
-          initial={{
-            opacity: 0,
-            scale: 0.95,
-          }}
+  initial={{
+    opacity: 0,
+    scale: 0.95,
+  }}
 
-          whileInView={{
-            opacity: 1,
-            scale: 1,
-          }}
+  whileInView={{
+    opacity: 1,
+    scale: 1,
+  }}
 
-          whileHover={{
-            scale: 1.02,
-          }}
+  whileHover={{
+    scale: 1.02,
+  }}
 
-          whileTap={{
-            scale: 0.98,
-          }}
+  whileTap={{
+    scale: 0.98,
+  }}
 
-          viewport={{
-            once: true,
-            amount: 0.3,
-          }}
+  viewport={{
+    once: true,
+    amount: 0.3,
+  }}
 
-          transition={{
-            duration: 0.7,
-            ease: [0.22, 1, 0.36, 1],
-          }}
-        >
+  transition={{
+    duration: 0.7,
+    ease: [0.22, 1, 0.36, 1],
+  }}
+>
+  <span>
+    Start a conversation
+  </span>
 
-          <span>
-            Start a conversation
-          </span>
-
-          <span className="contact-cta-icon">
-            <ArrowUpRight size={22} />
-          </span>
-
-        </motion.a>
+  <span className="contact-cta-icon">
+    <ArrowUpRight size={22} />
+  </span>
+</motion.a>
 
 
         {/* =====================================================
@@ -179,7 +182,7 @@ function Contact() {
           ================================================= */}
 
           <motion.a
-            href={`tel:+91${phone}`}
+            href={`tel:${phone}`}
             className="contact-detail"
 
             initial={{
@@ -213,7 +216,7 @@ function Contact() {
               </span>
 
               <span className="contact-detail-value">
-                +91 85168 96150
+                +91 78275 07583
               </span>
             </div>
 
