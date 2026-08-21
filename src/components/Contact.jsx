@@ -172,7 +172,7 @@ function Contact() {
           {/* PHONE */}
 
           <motion.a
-            href="tel:+918516896150"
+            href="tel:+91 78275-07583"
             className="contact-detail"
 
             initial={{
@@ -206,7 +206,7 @@ function Contact() {
               </span>
 
               <span className="contact-detail-value">
-                +91 85168 96150
+                +91 78275 07583
               </span>
             </div>
 
